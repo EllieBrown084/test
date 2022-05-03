@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/finalThirdScore"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/finalThirdName"
+        app:layout_constraintEnd_toEndOf="@+id/finalSecondScore"
+        app:layout_constraintStart_toStartOf="@+id/finalSecondScore"
+        app:layout_constraintTop_toTopOf="@+id/finalThirdName" />
+
+    <TextView
+        android:id="@+id/finalFourthScore"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/finalFourthName"
+        app:layout_constraintEnd_toEndOf="@+id/finalThirdScore"
+        app:layout_constraintStart_toStartOf="@+id/finalThirdScore"
+        app:layout_constraintTop_toTopOf="@+id/finalFourthName" />
+
+    <TextView
+        android:id="@+id/finalFifthScore"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/finalFifthName"
+        app:layout_constraintEnd_toEndOf="@+id/finalFourthScore"
+        app:layout_constraintStart_toStartOf="@+id/finalFourthScore"
+        app:layout_constraintTop_toTopOf="@+id/finalFifthName" />
+
+    <TextView
+        android:id="@+id/finalSecondScore"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/finalSecondName"
+        app:layout_constraintEnd_toEndOf="@+id/finalFirstScore"
+        app:layout_constraintStart_toStartOf="@+id/finalFirstScore"
+        app:layout_constraintTop_toTopOf="@+id/finalSecondName" />
+
+    <TextView
+        android:id="@+id/finalSixthScore"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/finalSixthName"
+        app:layout_constraintEnd_toEndOf="@+id/finalFifthScore"
+        app:layout_constraintStart_toStartOf="@+id/finalFifthScore"
+        app:layout_constraintTop_toTopOf="@+id/finalSixthName" />
+
+    <TextView
+        android:id="@+id/finalSecondName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/finalFirstName"
+        app:layout_constraintStart_toStartOf="@+id/finalFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/finalFirstName" />
+
+    <TextView
+        android:id="@+id/finalThirdName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/finalSecondName"
+        app:layout_constraintStart_toStartOf="@+id/finalSecondName"
+        app:layout_constraintTop_toBottomOf="@+id/finalSecondName" />
+
+    <TextView
+        android:id="@+id/finalFourthName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/finalThirdName"
+        app:layout_constraintStart_toStartOf="@+id/finalThirdName"
+        app:layout_constraintTop_toBottomOf="@+id/finalThirdName" />
+
+    <TextView
+        android:id="@+id/finalFifthName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/finalFourthName"
+        app:layout_constraintStart_toStartOf="@+id/finalFourthName"
+        app:layout_constraintTop_toBottomOf="@+id/finalFourthName" />
+
+    <TextView
+        android:id="@+id/finalSixthName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/finalFifthName"
+        app:layout_constraintStart_toStartOf="@+id/finalFifthName"
+        app:layout_constraintTop_toBottomOf="@+id/finalFifthName" />
+
+    <TextView
+        android:id="@+id/finalScoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Final Scores"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/finalFirstName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/finalFirstScore"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Back to Main Screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

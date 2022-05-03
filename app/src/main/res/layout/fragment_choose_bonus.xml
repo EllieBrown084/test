@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/BonusTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Click on the player who won bonus/wagered points"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/Player2_button"
+        android:layout_width="106dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Player 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Player4_button"
+        android:layout_width="106dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="90dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Player 4"
+        app:layout_constraintEnd_toEndOf="@+id/Player2_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Player2_button"
+        app:layout_constraintTop_toBottomOf="@+id/Player2_button" />
+
+    <Button
+        android:id="@+id/Player3_button"
+        android:layout_width="106dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="90dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Player 3"
+        app:layout_constraintEnd_toEndOf="@+id/Player1_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Player1_button"
+        app:layout_constraintTop_toBottomOf="@+id/Player1_button" />
+
+    <Button
+        android:id="@+id/Player5_button"
+        android:layout_width="106dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="90dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Player 5"
+        app:layout_constraintEnd_toEndOf="@+id/Player3_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Player3_button"
+        app:layout_constraintTop_toBottomOf="@+id/Player3_button" />
+
+    <Button
+        android:id="@+id/Player1_button"
+        android:layout_width="106dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Player 1"
+        app:layout_constraintEnd_toStartOf="@+id/Player2_button"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Player6_button"
+        android:layout_width="106dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="90dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Player 6"
+        app:layout_constraintEnd_toEndOf="@+id/Player4_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Player4_button"
+        app:layout_constraintTop_toBottomOf="@+id/Player4_button" />
+
+    <Button
+        android:id="@+id/chooseBonusGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="None"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:text="Player 1 Name:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Player1Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/Player1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/Player1"
+        app:layout_constraintTop_toTopOf="@+id/Player1"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/Player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Player 2 Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Player1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Player1"
+        app:layout_constraintTop_toBottomOf="@+id/Player1" />
+
+    <EditText
+        android:id="@+id/Player2Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/Player2"
+        app:layout_constraintEnd_toEndOf="@+id/Player1Edit"
+        app:layout_constraintStart_toStartOf="@+id/Player1Edit"
+        app:layout_constraintTop_toTopOf="@+id/Player2" />
+
+    <TextView
+        android:id="@+id/Player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Player 3 Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Player2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Player2"
+        app:layout_constraintTop_toBottomOf="@+id/Player2" />
+
+    <EditText
+        android:id="@+id/Player3Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/Player3"
+        app:layout_constraintEnd_toEndOf="@+id/Player2Edit"
+        app:layout_constraintStart_toStartOf="@+id/Player2Edit"
+        app:layout_constraintTop_toTopOf="@+id/Player3" />
+
+    <TextView
+        android:id="@+id/Player4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Player 4 Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Player3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Player3"
+        app:layout_constraintTop_toBottomOf="@+id/Player3" />
+
+    <EditText
+        android:id="@+id/Player4Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/Player4"
+        app:layout_constraintEnd_toEndOf="@+id/Player3Edit"
+        app:layout_constraintStart_toStartOf="@+id/Player3Edit"
+        app:layout_constraintTop_toTopOf="@+id/Player4" />
+
+    <TextView
+        android:id="@+id/Player5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Player 5 Name:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player4" />
+
+    <EditText
+        android:id="@+id/Player5Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/Player5"
+        app:layout_constraintEnd_toEndOf="@+id/Player4Edit"
+        app:layout_constraintStart_toStartOf="@+id/Player4Edit"
+        app:layout_constraintTop_toTopOf="@+id/Player5" />
+
+    <TextView
+        android:id="@+id/Player6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="Player 6 Name:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player5" />
+
+    <EditText
+        android:id="@+id/Player6Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/Player6"
+        app:layout_constraintEnd_toEndOf="@+id/Player5Edit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Player5Edit"
+        app:layout_constraintTop_toTopOf="@+id/Player6" />
+
+    <Button
+        android:id="@+id/inputPlayersGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/inputPlayersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Type in all players' names"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

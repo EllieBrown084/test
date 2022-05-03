@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/wageredPointsAmount"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="-10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/wageredPointsHowMany"
+        app:layout_constraintStart_toEndOf="@+id/wageredPointsHowMany" />
+
+    <TextView
+        android:id="@+id/wageredPointsHowMany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="How many?"
+        app:layout_constraintStart_toStartOf="@+id/capturedPiratesHowMany"
+        app:layout_constraintTop_toBottomOf="@+id/wageredPoints" />
+
+    <EditText
+        android:id="@+id/capturedPiratesAmount"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="-10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/capturedPiratesHowMany"
+        app:layout_constraintStart_toEndOf="@+id/capturedPiratesHowMany" />
+
+    <TextView
+        android:id="@+id/capturedPiratesHowMany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="How many?"
+        app:layout_constraintStart_toStartOf="@+id/captured14HowMany"
+        app:layout_constraintTop_toBottomOf="@+id/capturedPirates" />
+
+    <TextView
+        android:id="@+id/inputBonusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Select the type(s) of bonus points won by player__"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/captured14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="Captured 14 (green, purple, or yellow)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/captured14Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Captured 14 (black)"
+        app:layout_constraintStart_toStartOf="@+id/captured14"
+        app:layout_constraintTop_toBottomOf="@+id/captured14Amount" />
+
+    <CheckBox
+        android:id="@+id/capturedPirates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Captured pirates with Skull King"
+        app:layout_constraintStart_toStartOf="@+id/captured14Black"
+        app:layout_constraintTop_toBottomOf="@+id/captured14Black" />
+
+    <CheckBox
+        android:id="@+id/capturedSkullKing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Captured Skull King with Mermaid"
+        app:layout_constraintStart_toStartOf="@+id/capturedPirates"
+        app:layout_constraintTop_toBottomOf="@+id/capturedPiratesAmount" />
+
+    <CheckBox
+        android:id="@+id/lootCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Successfully used Loot Card"
+        app:layout_constraintStart_toStartOf="@+id/capturedSkullKing"
+        app:layout_constraintTop_toBottomOf="@+id/capturedSkullKing" />
+
+    <CheckBox
+        android:id="@+id/wageredPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Wagered points with Rascal of Roatan"
+        app:layout_constraintStart_toStartOf="@+id/lootCard"
+        app:layout_constraintTop_toBottomOf="@+id/lootCard" />
+
+    <EditText
+        android:id="@+id/captured14Amount"
+        android:layout_width="44dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="-10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/captured14HowMany"
+        app:layout_constraintStart_toEndOf="@+id/captured14HowMany" />
+
+    <TextView
+        android:id="@+id/captured14HowMany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="10dp"
+        android:text="How many?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captured14" />
+
+    <Button
+        android:id="@+id/inputBonusGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/addMoreBonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add more bonus points"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/inputBidsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Type in the bids of each player"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inputBidsRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/inputBidsTitle"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/inputBidsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/inputBidsTitle" />
+
+    <TextView
+        android:id="@+id/inputBidsPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/player1Bid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBidsPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputBidsPlayer1"
+        app:layout_constraintTop_toTopOf="@+id/inputBidsPlayer1"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/inputBidsPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputBidsPlayer1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/inputBidsPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/inputBidsPlayer1" />
+
+    <EditText
+        android:id="@+id/player2Bid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBidsPlayer2"
+        app:layout_constraintEnd_toEndOf="@+id/player1Bid"
+        app:layout_constraintStart_toStartOf="@+id/player1Bid"
+        app:layout_constraintTop_toTopOf="@+id/inputBidsPlayer2" />
+
+    <TextView
+        android:id="@+id/inputBidsPlayer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputBidsPlayer2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/inputBidsPlayer2"
+        app:layout_constraintTop_toBottomOf="@+id/inputBidsPlayer2" />
+
+    <EditText
+        android:id="@+id/player3Bid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBidsPlayer3"
+        app:layout_constraintEnd_toEndOf="@+id/player2Bid"
+        app:layout_constraintStart_toStartOf="@+id/player2Bid"
+        app:layout_constraintTop_toTopOf="@+id/inputBidsPlayer3" />
+
+    <TextView
+        android:id="@+id/inputBidsPlayer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputBidsPlayer3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/inputBidsPlayer3"
+        app:layout_constraintTop_toBottomOf="@+id/inputBidsPlayer3" />
+
+    <EditText
+        android:id="@+id/player4Bid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBidsPlayer4"
+        app:layout_constraintEnd_toEndOf="@+id/player3Bid"
+        app:layout_constraintStart_toStartOf="@+id/player3Bid"
+        app:layout_constraintTop_toTopOf="@+id/inputBidsPlayer4" />
+
+    <TextView
+        android:id="@+id/inputBidsPlayer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputBidsPlayer4" />
+
+    <EditText
+        android:id="@+id/player5Bid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBidsPlayer5"
+        app:layout_constraintEnd_toEndOf="@+id/player4Bid"
+        app:layout_constraintStart_toStartOf="@+id/player4Bid"
+        app:layout_constraintTop_toTopOf="@+id/inputBidsPlayer5" />
+
+    <TextView
+        android:id="@+id/inputBidsPlayer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputBidsPlayer5" />
+
+    <EditText
+        android:id="@+id/player6Bid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBidsPlayer6"
+        app:layout_constraintEnd_toEndOf="@+id/player5Bid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/player5Bid"
+        app:layout_constraintTop_toTopOf="@+id/inputBidsPlayer6" />
+
+    <Button
+        android:id="@+id/inputBidsGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/inputBidsSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="110dp"
+        android:text="Player name: current score"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

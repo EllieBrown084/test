@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/inputTricksTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Type in the number of tricks each player won"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/inputTricksRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Round ___"
+        app:layout_constraintEnd_toEndOf="@+id/inputTricksTitle"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/inputTricksTitle"
+        app:layout_constraintTop_toBottomOf="@+id/inputTricksTitle" />
+
+    <TextView
+        android:id="@+id/inputTricksPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="175dp"
+        android:text="Player 1 Name:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/player1Tricks"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputTricksPlayer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inputTricksPlayer1"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/inputTricksPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Player 2 Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputTricksPlayer1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/inputTricksPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/inputTricksPlayer1" />
+
+    <EditText
+        android:id="@+id/player2Tricks"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputTricksPlayer2"
+        app:layout_constraintEnd_toEndOf="@+id/player1Tricks"
+        app:layout_constraintStart_toStartOf="@+id/player1Tricks"
+        app:layout_constraintTop_toTopOf="@+id/inputTricksPlayer2" />
+
+    <TextView
+        android:id="@+id/inputTricksPlayer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Player 3 Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputTricksPlayer2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/inputTricksPlayer2"
+        app:layout_constraintTop_toBottomOf="@+id/inputTricksPlayer2" />
+
+    <EditText
+        android:id="@+id/player3Tricks"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputTricksPlayer3"
+        app:layout_constraintEnd_toEndOf="@+id/player2Tricks"
+        app:layout_constraintStart_toStartOf="@+id/player2Tricks"
+        app:layout_constraintTop_toTopOf="@+id/inputTricksPlayer3" />
+
+    <TextView
+        android:id="@+id/inputTricksPlayer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Player 4 Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputTricksPlayer3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/inputTricksPlayer3"
+        app:layout_constraintTop_toBottomOf="@+id/inputTricksPlayer3" />
+
+    <EditText
+        android:id="@+id/player4Tricks"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputTricksPlayer4"
+        app:layout_constraintEnd_toEndOf="@+id/player3Tricks"
+        app:layout_constraintStart_toStartOf="@+id/player3Tricks"
+        app:layout_constraintTop_toTopOf="@+id/inputTricksPlayer4" />
+
+    <TextView
+        android:id="@+id/inputTricksPlayer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Player 5 Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputTricksPlayer4"
+        app:layout_constraintStart_toStartOf="@+id/inputTricksPlayer4"
+        app:layout_constraintTop_toBottomOf="@+id/inputTricksPlayer4" />
+
+    <EditText
+        android:id="@+id/player5Tricks"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputTricksPlayer5"
+        app:layout_constraintEnd_toEndOf="@+id/player4Tricks"
+        app:layout_constraintStart_toStartOf="@+id/player4Tricks"
+        app:layout_constraintTop_toTopOf="@+id/inputTricksPlayer5" />
+
+    <TextView
+        android:id="@+id/inputTricksPlayer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Player 6 Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/inputTricksPlayer5"
+        app:layout_constraintStart_toStartOf="@+id/inputTricksPlayer5"
+        app:layout_constraintTop_toBottomOf="@+id/inputTricksPlayer5" />
+
+    <EditText
+        android:id="@+id/player6Tricks"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/inputTricksPlayer6"
+        app:layout_constraintEnd_toEndOf="@+id/player5Tricks"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/player5Tricks"
+        app:layout_constraintTop_toTopOf="@+id/inputTricksPlayer6" />
+
+    <Button
+        android:id="@+id/inputTricksGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/changeBid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Change bid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/wagerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:text="Wager Points"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/inputTricksSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="Player: Current score/bid"
+        app:layout_constraintEnd_toEndOf="@+id/inputTricksPlayer1"
+        app:layout_constraintStart_toStartOf="@+id/inputTricksPlayer1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

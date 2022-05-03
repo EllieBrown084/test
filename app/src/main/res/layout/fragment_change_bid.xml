@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/changeBidTitle"
+        android:layout_width="325dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:text="Who played the Rascal of Roatan Pirate card?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/changeBidPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Player 1"
+        app:layout_constraintStart_toStartOf="@+id/changeBidTitle"
+        app:layout_constraintTop_toBottomOf="@+id/changeBidTitle" />
+
+    <CheckBox
+        android:id="@+id/changeBidPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Player 2"
+        app:layout_constraintStart_toStartOf="@+id/changeBidPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/changeBidPlayer1" />
+
+    <CheckBox
+        android:id="@+id/changeBidPlayer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Player 3"
+        app:layout_constraintStart_toStartOf="@+id/changeBidPlayer2"
+        app:layout_constraintTop_toBottomOf="@+id/changeBidPlayer2" />
+
+    <CheckBox
+        android:id="@+id/changeBidPlayer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Player 4"
+        app:layout_constraintStart_toStartOf="@+id/changeBidPlayer3"
+        app:layout_constraintTop_toBottomOf="@+id/changeBidPlayer3" />
+
+    <CheckBox
+        android:id="@+id/changeBidPlayer5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Player 5"
+        app:layout_constraintStart_toStartOf="@+id/changeBidPlayer4"
+        app:layout_constraintTop_toBottomOf="@+id/changeBidPlayer4" />
+
+    <CheckBox
+        android:id="@+id/changeBidPlayer6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Player 6"
+        app:layout_constraintStart_toStartOf="@+id/changeBidPlayer5"
+        app:layout_constraintTop_toBottomOf="@+id/changeBidPlayer5" />
+
+    <TextView
+        android:id="@+id/changeBidTitle2"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="How would they like their bid changed?"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/changeBidTitle"
+        app:layout_constraintTop_toBottomOf="@+id/changeBidPlayer6" />
+
+    <CheckBox
+        android:id="@+id/incrementBid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="+1"
+        app:layout_constraintStart_toStartOf="@+id/changeBidTitle2"
+        app:layout_constraintTop_toBottomOf="@+id/changeBidTitle2" />
+
+    <CheckBox
+        android:id="@+id/decrementBid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="-1"
+        app:layout_constraintStart_toStartOf="@+id/incrementBid"
+        app:layout_constraintTop_toBottomOf="@+id/incrementBid" />
+
+    <Button
+        android:id="@+id/changeBidGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

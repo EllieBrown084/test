@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.skullkingscorer.fragments.MainScreen"
+        android:label="MainScreen" >
+        <action
+            android:id="@+id/action_mainScreen_to_scoreBoard"
+            app:destination="@id/scoreBoard" />
+        <action
+            android:id="@+id/action_mainScreen_to_newGame"
+            app:destination="@id/newGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/newGame"
+        android:name="com.example.skullkingscorer.fragments.NewGame"
+        android:label="NewGame" >
+        <action
+            android:id="@+id/action_newGame_to_inputPlayers"
+            app:destination="@id/inputPlayers" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputPlayers"
+        android:name="com.example.skullkingscorer.fragments.InputPlayers"
+        android:label="InputPlayers" >
+        <action
+            android:id="@+id/action_inputPlayers_to_inputBids"
+            app:destination="@id/inputBids" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputBids"
+        android:name="com.example.skullkingscorer.fragments.InputBids"
+        android:label="InputBids" >
+        <action
+            android:id="@+id/action_inputBids_to_inputTricks"
+            app:destination="@id/inputTricks" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputTricks"
+        android:name="com.example.skullkingscorer.fragments.InputTricks"
+        android:label="InputTricks" >
+        <action
+            android:id="@+id/action_inputTricks_to_chooseBonus"
+            app:destination="@id/chooseBonus" />
+        <action
+            android:id="@+id/action_inputTricks_to_changeBid"
+            app:destination="@id/changeBid" />
+        <action
+            android:id="@+id/action_inputTricks_to_finalScore"
+            app:destination="@id/finalScore" />
+        <action
+            android:id="@+id/action_inputTricks_to_wager"
+            app:destination="@id/wager" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseBonus"
+        android:name="com.example.skullkingscorer.fragments.ChooseBonus"
+        android:label="ChooseBonus" >
+        <action
+            android:id="@+id/action_chooseBonus_to_inputBonus"
+            app:destination="@id/inputBonus" />
+        <action
+            android:id="@+id/action_chooseBonus_to_inputBids"
+            app:destination="@id/inputBids" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputBonus"
+        android:name="com.example.skullkingscorer.fragments.InputBonus"
+        android:label="InputBonus" >
+        <action
+            android:id="@+id/action_inputBonus_to_inputBids"
+            app:destination="@id/inputBids" />
+        <action
+            android:id="@+id/action_inputBonus_to_chooseBonus"
+            app:destination="@id/chooseBonus" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreBoard"
+        android:name="com.example.skullkingscorer.fragments.ScoreBoard"
+        android:label="fragment_score_board"
+        tools:layout="@layout/fragment_score_board" >
+        <action
+            android:id="@+id/action_scoreBoard_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeBid"
+        android:name="com.example.skullkingscorer.fragments.ChangeBid"
+        android:label="ChangeBid" >
+        <action
+            android:id="@+id/action_changeBid_to_inputTricks"
+            app:destination="@id/inputTricks" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalScore"
+        android:name="com.example.skullkingscorer.fragments.FinalScore"
+        android:label="fragment_final_score"
+        tools:layout="@layout/fragment_final_score" >
+        <action
+            android:id="@+id/action_finalScore_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/wager"
+        android:name="com.example.skullkingscorer.fragments.Wager"
+        android:label="Wager" >
+        <action
+            android:id="@+id/action_wager_to_inputTricks"
+            app:destination="@id/inputTricks" />
+    </fragment>
+</navigation>
